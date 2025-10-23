@@ -5171,3 +5171,6 @@ section,
   font-size: 22px;
   margin: 0 auto 6px;
 }
+.bi.bi-plus-lg, .bi.bi-arrow-right{
+  margin-bottom: 0px;
+}
