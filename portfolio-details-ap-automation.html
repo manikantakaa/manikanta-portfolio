@@ -155,6 +155,71 @@
               </div>
             </div>
 
+            <!-- ================= RESEARCH PROCESS ================= -->
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="text-white text-start mb-4">Research Process</h2>
+
+              <div class="row g-4">
+
+                <!-- Stakeholder Interviews -->
+                <div class="col-lg-4">
+                  <div class="sg-card gradient-border h-100">
+                    <div class="sg-card-inner p-4">
+                      <i class="bi bi-people fs-1 text-primary mb-3"></i>
+                      <h4 class="text-white">Stakeholder Interviews</h4>
+                      <p class="small text-secondary">
+                        Interviewed Finance Managers, Department Heads, and Compliance Officers
+                        to identify approval bottlenecks, audit risks, and reporting needs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Workflow Analysis -->
+                <div class="col-lg-4">
+                  <div class="sg-card gradient-border h-100">
+                    <div class="sg-card-inner p-4">
+                      <i class="bi bi-diagram-3 fs-1 text-success mb-3"></i>
+                      <h4 class="text-white">Workflow Analysis</h4>
+                      <p class="small text-secondary">
+                        Audited existing AP workflows including invoice intake, OCR extraction,
+                        NetSuite sync, and approval hierarchies across departments.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Risk & Compliance Review -->
+                <div class="col-lg-4">
+                  <div class="sg-card gradient-border h-100">
+                    <div class="sg-card-inner p-4">
+                      <i class="bi bi-shield-check fs-1 text-info mb-3"></i>
+                      <h4 class="text-white">Risk & Compliance Review</h4>
+                      <p class="small text-secondary">
+                        Identified HIPAA risks, PHI exposure points, and audit requirements
+                        influencing access control and interaction design.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- ================= KEY RESEARCH INSIGHTS ================= -->
+            <div class="mt-4" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-white mb-3">Key Research Insights</h3>
+
+              <ul class="text-secondary small">
+                <li>Finance teams lacked real-time visibility into invoice approval status.</li>
+                <li>OCR errors were common but users preferred reviewing inline rather than re-uploading invoices.</li>
+                <li>Approval delays occurred due to unclear ownership across departments.</li>
+                <li>Compliance teams required immutable audit trails accessible without engineering support.</li>
+                <li>Users trusted automation only when system feedback was explicit and reversible.</li>
+              </ul>
+            </div>
+
+
             <!-- ===== Design Process Gradient Boxes (Refined UX Flow) ===== -->
             <!-- ===== Design Process Gradient Boxes (2-Word Version) ===== -->
             <div class="mt-5 design-process">
@@ -285,6 +350,57 @@
                 </div>
               </div>
             </div>
+
+            <!-- ================= FINANCE USER JOURNEY MAP ================= -->
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="text-white text-start mb-4">Finance User Journey Mapping</h2>
+
+              <div class="table-responsive">
+                <table class="table table-dark table-bordered align-middle small text-center mb-0">
+                  <thead style="background: linear-gradient(90deg, #10355f, #0e476e);">
+                    <tr class="text-uppercase text-white">
+                      <th>Stage</th>
+                      <th>User Action</th>
+                      <th>Pain Points</th>
+                      <th>UX Opportunity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Invoice Intake</td>
+                      <td>Uploads vendor invoice</td>
+                      <td>Duplicate uploads, missing fields</td>
+                      <td>OCR + duplicate detection alerts</td>
+                    </tr>
+                    <tr>
+                      <td>Validation</td>
+                      <td>Reviews extracted invoice data</td>
+                      <td>Incorrect OCR mapping</td>
+                      <td>Inline field validation & preview</td>
+                    </tr>
+                    <tr>
+                      <td>Approval Flow</td>
+                      <td>Sends invoice for approvals</td>
+                      <td>Approval delays, no visibility</td>
+                      <td>Status tracking & reminders</td>
+                    </tr>
+                    <tr>
+                      <td>Payment Release</td>
+                      <td>Triggers payroll/payment</td>
+                      <td>Risk of incorrect payment</td>
+                      <td>Final confirmation summary modal</td>
+                    </tr>
+                    <tr>
+                      <td>Audit & Compliance</td>
+                      <td>Prepares audit reports</td>
+                      <td>Manual audit trail creation</td>
+                      <td>Auto-generated logs & export</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
 
             <!-- ================= SITEMAP ================= -->
             <div class="mt-5">
@@ -418,6 +534,52 @@
                   </div>
                 </div>
 
+              </div>
+            </div>
+
+            <!-- ================= UX DECISIONS & TRADE-OFFS ================= -->
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="text-white text-start mb-4">Key UX Decisions & Trade-offs</h2>
+
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <div class="sg-card gradient-border h-100">
+                    <div class="sg-card-inner p-4">
+                      <i class="bi bi-shuffle fs-1 text-warning mb-3"></i>
+                      <h4 class="text-white">Automation vs Control</h4>
+                      <p class="small text-secondary">
+                        Balanced full automation with manual review checkpoints to ensure financial accuracy
+                        and HIPAA compliance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="sg-card gradient-border h-100">
+                    <div class="sg-card-inner p-4">
+                      <i class="bi bi-eye fs-1 text-primary mb-3"></i>
+                      <h4 class="text-white">Visibility over Speed</h4>
+                      <p class="small text-secondary">
+                        Chose transparent approval status indicators instead of hidden background processing
+                        to build user trust.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="sg-card gradient-border h-100">
+                    <div class="sg-card-inner p-4">
+                      <i class="bi bi-shield-lock fs-1 text-info mb-3"></i>
+                      <h4 class="text-white">Compliance-first UX</h4>
+                      <p class="small text-secondary">
+                        Designed role-based access and masked fields even when it added extra steps,
+                        prioritizing security over convenience.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
